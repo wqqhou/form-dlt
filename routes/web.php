@@ -37,6 +37,22 @@ Route::get('/privacy', function () {
     return view('privacy');
 });
 
+Route::get('/articleA', function () {
+    return view('articleA');
+});
+
+Route::get('/articleB', function () {
+    return view('articleB');
+});
+
+Route::get('/articleC', function () {
+    return view('articleC');
+});
+
+Route::get('/articleD', function () {
+    return view('articleD');
+});
+
 Route::get('/logout', 'Auth\LoginController@logout');
 
 
