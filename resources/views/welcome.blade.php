@@ -71,7 +71,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5">從今天開始累積你的區塊鏈知識</h1>
+            <h1 class="mb-5">從今天開始累積你的知識</h1>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
             <a href="{{ url('/test') }}" class="btn btn-block btn-lg btn-primary">Start Quiz</a>
@@ -84,31 +84,37 @@
     <section class="features-icons bg-light text-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
+
+          <div class="col-lg-3">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
                 <i class="icon-screen-desktop m-auto text-primary"></i>
-              </div>
-              <h3>隨時挑戰</h3>
-              <p class="lead mb-0">隨時能挑戰自己的觀念</p>
+              </div><a href="/articleA"> <h3>How Robot Change the World</h3></a>             
+              <p class="lead mb-0">牛津大學對於AI、機器人世界的預測</p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-3">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
                 <i class="icon-layers m-auto text-primary"></i>
-              </div>
-              <h3>橫跨領域</h3>
-              <p class="lead mb-0">觀念、技術、金融一應俱全</p>
+              </div><a href="/articleB"> <h3>JP Morgan robo-adviser </h3></a>
+              <p class="lead mb-0">理財機器人的AI</p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-check m-auto text-primary"></i>
+              </div><a href="/articleC"> <h3>Walwart using robot</h3></a>
+              <p class="lead mb-0">零售業的AI</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
                 <i class="icon-check m-auto text-primary"></i>
-              </div>
-              <h3>即時批改</h3>
-              <p class="lead mb-0">作答完即附上結果與詳解</p>
+              </div><a href="articleD"> <h3>AI相關應用</h3></a>
+              <p class="lead mb-0">我國使用AI的案例</p>
             </div>
           </div>
         </div>
@@ -119,61 +125,17 @@
     <section class="showcase">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
-
-          <div class="col-lg-6 order-lg-2 text-white showcase-img pic1">
-            <p style="text-align: center;margin-top:30rem; ">Images requires attribution to <a href="https://descryptive.com">Descryptive</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
-          </div>
+          <iframe width="951" height="550" src="https://www.youtube.com/embed/P02fLk2wb1Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>共識機制</h2>
-            <p class="lead mb-0">辨別各種區塊鏈中，如何透過不同的共識機制，促使全體使用者一起維護帳本。</p>
+            <h2>Jack Tan（Kronos Research-Founding Partner & Co-CEO）</h2>
+            <p class="lead mb-0">ＡＩ的目的應該是為了幫助更多的人！人類員工設計、監控ＡＩ，人機合作為社會創造更多價值！建議學習相關程式設計技能，並多方了解相關趨勢與對社會的影響，選擇自己具有熱情的領域投入。</p>
           </div>
         </div>
         <div class="row no-gutters">
-          <div class="col-lg-6 text-white showcase-img pic2">
-            <p style="text-align: center;margin-top:30rem; ">Images requires attribution to <a href="https://descryptive.com">Descryptive</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
-          </div>
+          <iframe width="951" height="550" src="https://www.youtube.com/embed/4NAAub9nMns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="col-lg-6 my-auto showcase-text">
-            <h2>加密機制</h2>
-            <p class="lead mb-0">了解如何透過雜湊函數(Hash Function)，確保區塊鏈的安全性(例如:無法竄改、非對稱加密)。</p>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-lg-6 order-lg-2 text-white showcase-img pic3">
-            <p style="text-align: center;margin-top:30rem; ">Images requires attribution to <a href="https://descryptive.com">Descryptive</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
-          </div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>去中心化</h2>
-            <p class="lead mb-0">探究如何讓每一個使用者都是平等的，擁有相同權限，擺脫中央金融機構，並且沒有人有優勢可以作弊。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials text-center bg-light">
-      <div class="container">
-        <h2 class="mb-5">貢獻者</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/shifu.jpg" alt="">
-              <h5>Shifu Hung</h5>
-              <p class="font-weight-light mb-0">一個肥宅</br>有興趣改善網站或協助增加題目可以去密底下的 FB 粉專</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/tsehou.jpg" alt="">
-              <h5>Tse Hou</h5>
-              <p class="font-weight-light mb-0"></br>區塊鏈專欄作家、講師、礦場相關服務等<a href="mailto:wqqmatt@yahoo.com.tw">wqqmatt@yahoo.com.tw</a></p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-              <h5>Unknown</h5>
-              <p class="font-weight-light mb-0">Unknown</p>
-            </div>
+            <h2>Wilson Huang（秘銀科技Mithril HQ - VP of Product & Engineering、Steaker創辦人）</h2>
+            <p class="lead mb-0">ＡＩ只是輔助工具，人類員工還是主體！盡量學習ＡＩ相關科普知識，反應能力與邏輯能力、態度與團隊溝通能力、職位專業能力仍是重點！</p>
           </div>
         </div>
       </div>
@@ -185,10 +147,10 @@
       <div class="container">
         <div class="row" style="overflow:auto">
           <div class="col-xl-9 mx-auto">
-            <h2 class="mb-4">您可以贊助ETH讓平台更長久:</h2>
+            <h2 class="mb-4">歡迎聯絡我們:</h2>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <h2 class="mb-4">0x6DAF4cf7943101F4471dD5B84A8F1209C8cA7946</h2>
+            <h2 class="mb-4">wqqmatt@gmail.com</h2>
           </div>
         </div>
       </div>
@@ -199,7 +161,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-            <p class="text-muted small mb-4 mb-lg-0">&copy; BlockFayjai 2018. All Rights Reserved.</p>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; whiteCAT 2020. All Rights Reserved.</p>
           </div>
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
@@ -209,7 +171,7 @@
                 </a>
               </li>
               <li class="list-inline-item mr-3">
-                <a href="https://www.facebook.com/BlockFayjai/" target="_blank">
+                <a href="https://www.facebook.com/" target="_blank">
                   <i class="fa fa-facebook fa-2x fa-fw"></i>
                 </a>
               </li>
