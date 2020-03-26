@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        /*
+        
         
         $this->call(AdminTablesSeeder::class);
 
@@ -97,6 +97,6 @@ class DatabaseSeeder extends Seeder
             'http_path' => '/tests*',
             ],
         ]);
-        */
+        
     }
 }
