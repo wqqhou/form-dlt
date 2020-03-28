@@ -32,7 +32,7 @@ class CreateTestsTable extends Migration
             $table->string('judges')->nullable();
 
         });
-        */
+        
 
         Schema::create('question_test', function (Blueprint $table) {
             $table->integer('question_id')->unsigned()->index();
@@ -41,6 +41,7 @@ class CreateTestsTable extends Migration
             $table->foreign('test_id')->references('id')->on('tests');
             $table->timestamps();
         });
+        */
     }
 
     /**
