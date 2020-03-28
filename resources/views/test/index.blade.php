@@ -4,6 +4,7 @@
     <div class="container">
         <div class="jumbotron">
             <h1>測驗</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6q7GjSCKPW0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>準備好了嗎~開始答題吧！</p>
             {!! Form::open(['url' => '/test']) !!}
             <div class="row form-horizontal">
