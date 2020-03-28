@@ -12,6 +12,7 @@ class CreateTestsTable extends Migration
      */
     public function up()
     {
+        /*
         Schema::create('tests', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
@@ -31,6 +32,7 @@ class CreateTestsTable extends Migration
             $table->string('judges')->nullable();
 
         });
+        */
 
         Schema::create('question_test', function (Blueprint $table) {
             $table->integer('question_id')->unsigned()->index();
