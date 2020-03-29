@@ -132,7 +132,7 @@
           </div>
         </div>
         <div class="row no-gutters">
-          <iframe width="951" height="550" src="https://www.youtube.com/embed/4NAAub9nMns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YO22zpokJBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="col-lg-6 my-auto showcase-text">
             <h2>Wilson Huang（秘銀科技Mithril HQ - VP of Product & Engineering、Steaker創辦人）</h2>
             <p class="lead mb-0">ＡＩ只是輔助工具，人類員工還是主體！盡量學習ＡＩ相關科普知識，反應能力與邏輯能力、態度與團隊溝通能力、職位專業能力仍是重點！</p>
