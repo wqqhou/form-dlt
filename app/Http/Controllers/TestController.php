@@ -200,14 +200,11 @@ class TestController extends Controller
                     break;
                     
                 default:    //單選題
-                    if ($useranswer[$q_id] == $referanswer[$q_id]) {
                         $num++;
                         $answer[] = 1;
-                    } else {
-                        $num++;
-                        $answer[] = 1;
+                        break;
                     
-            }
+            
 
         }
         $test->judges = json_encode($answer);
@@ -276,5 +273,3 @@ class TestController extends Controller
 
 
 }
-
-
