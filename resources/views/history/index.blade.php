@@ -26,20 +26,7 @@
 
                 <br/>
 
-                <table id="example" class="display" style="width:100%">
-                    <thead>
-                        <tr>
-                            <th>代號</th>
-                            <th>測試時間</th>
-                            <th>答題時長</th>
-                            <th>題量</th>
-                            <th>範圍</th>
-                            <th>類型</th>
-                            <th>分數</th>
-                            <th>詳情</th>
-                        </tr>
-                    </thead>
-                </table>
+             
                 
                 
 
