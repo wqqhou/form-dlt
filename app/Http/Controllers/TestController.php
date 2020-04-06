@@ -201,10 +201,14 @@ class TestController extends Controller
                     $answer[] = 1;
                     break;
                 
-                default:    //單選題
+                default:    //單選題和判斷題，一樣的話是對的，否則答題錯誤
+                    if ($useranswer[$q_id] == $referanswer[$q_id]) {
                         $num++;
                         $answer[] = 1;
-
+                    } else
+                        $num++;
+                        $answer[] = 1;
+            }
         
         $test->judges = json_encode($answer);
         $point = round((100 / $total) * $num);
