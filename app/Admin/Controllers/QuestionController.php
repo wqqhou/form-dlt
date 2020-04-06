@@ -286,21 +286,23 @@ class QuestionController extends Controller
             $form->display('updated_at', 'Updated At');
         });
     }
-    protected function form_id()
+    protected function form_id($id=null)
     {
-        return Admin::form(Question::class, function (Form $form) {
+        return Admin::form(Question::class, function (Form $form) use($id) {
             // id, qtype_id, title, options, answer, parse
             $form->display('id', 'ID');
             $form->hidden('qtype_id', 'Question Type')->default(6);
             $form->ckeditor('title', '題目');
             $form->textarea('options', '選項')->default("A.選項內容\nB.選項內容\nC.選項內容\nD.選項內容\nE.選項內容\nF.選項內容\nG.選項內容\nH.選項內容\nI.選項內容");
-            
+
             if (!is_null($id)) $form->display('answer', '原答案');
             $form->multipleSelect('answer', '答案')->options(['A' => 'A', 'B' => 'B', 'C' => 'C', 'D' => 'D', 'E' => 'E' , 'F' => 'F', 'G' => 'G', 'H' => 'H', 'I' => 'I']);
                 // dd(implode(". ", json_decode(Question::where('id', $id)->value('answer'))));
             $form->ckeditor('parse', '詳解');
+
             $form->display('created_at', 'Created At');
             $form->display('updated_at', 'Updated At');
+
         });
     }
 }
