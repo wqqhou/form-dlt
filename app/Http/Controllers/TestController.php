@@ -55,7 +55,7 @@ class TestController extends Controller
     {
         //獲取表單中提交的答題數目以及測試方式。
         $tag_list = $request->get('tag_list');
-        $testType = 1; // 1為照順序
+        $testType = 0; // 1為照順序
         $totalNumber = $request->get('totalnumber');
         if ($totalNumber != 5 && $totalNumber != 10 && $totalNumber != 15 && $totalNumber != 20)
             $totalNumber = 10;
@@ -168,11 +168,11 @@ class TestController extends Controller
                         $n = 1;
                         $answer[] = 1;
                     } elseif ($ur == [] && $ua != []) {//不全得一半
-                        $answer[] = 1;
-                        $n = 1;
+                        $answer[] = 0;
+                        $n = 1 / 2;
                     } else {//答錯不得分
-                        $answer[] = 1;
-                        $n = 1;
+                        $answer[] = 0;
+                        $n = 0;
                     }
                     $num = $num + $n;
                     break;
@@ -184,7 +184,6 @@ class TestController extends Controller
                         $num++;
                         $answer[] = 1;
                     } else {
-                      
                         $answer[] = 0;
                     }
                     break;
@@ -196,10 +195,9 @@ class TestController extends Controller
                 default:    //單選題和判斷題，一樣的話是對的，否則答題錯誤
                     if ($useranswer[$q_id] == $referanswer[$q_id]) {
                         $num++;
-                        $answer[] = 1
-                    } else
-                        $num++;
                         $answer[] = 1;
+                    } else
+                        $answer[] = 0;
             }
 
         }
