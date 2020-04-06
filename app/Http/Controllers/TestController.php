@@ -205,7 +205,7 @@ class TestController extends Controller
                         $num++;
                         $answer[] = 1;
 
-        }
+        
         $test->judges = json_encode($answer);
         $point = round((100 / $total) * $num);
         $test->point = $point;
