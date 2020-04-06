@@ -17,10 +17,7 @@
                     @endif
                 </div>
 
-                {!! Form::label('totalnumber','請選擇題量：',['class'=>'col-lg-2 control-label ']) !!}
-                <div class="col-lg-2" >
-                    {!! Form::select('totalnumber', [5=>5,10=>10,15=>15,20=>20], 0, ['id'=>'totalnumber','class' => 'form-control']) !!}
-                </div>
+             
 
                 {!! Form::label('testtype','開始測驗：',['class'=>'col-lg-2 control-label ']) !!}
                 <div class="col-lg-2" >
