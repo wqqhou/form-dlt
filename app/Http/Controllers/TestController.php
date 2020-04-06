@@ -55,10 +55,8 @@ class TestController extends Controller
     {
         //獲取表單中提交的答題數目以及測試方式。
         $tag_list = $request->get('tag_list');
-        $testType = 0; // 1為照順序
-        $totalNumber = $request->get('totalnumber');
-        if ($totalNumber != 5 && $totalNumber != 10 && $totalNumber != 15 && $totalNumber != 20)
-            $totalNumber = 10;
+        $testType = 1; // 1為照順序
+        $totalNumber = 20;
         //得到所有要答的題目的id號。
         $questionids = Test::generateQuestion($tag_list, $testType, $totalNumber);
 
@@ -192,13 +190,21 @@ class TestController extends Controller
                     $num++;
                     $answer[] = 1;
                     break;
-                default:    //單選題和判斷題，一樣的話是對的，否則答題錯誤
+                case 3://判斷題
+                    if ($useranswer[$q_id] == $referanswer[$q_id]) {
+                        $num++;
+                        $answer[] = 1;
+                    } else
+                        $answer[] = 0;
+                    
+                default:    //單選題
                     if ($useranswer[$q_id] == $referanswer[$q_id]) {
                         $num++;
                         $answer[] = 1;
                     } else
                         $num++;
                         $answer[] = 1;
+                    
             }
 
         }
