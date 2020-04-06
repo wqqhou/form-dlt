@@ -194,14 +194,16 @@ class TestController extends Controller
                     if ($useranswer[$q_id] == $referanswer[$q_id]) {
                         $num++;
                         $answer[] = 1;
-                    } else
+                    } else {
                         $answer[] = 0;
+                    }
+                    break;
                     
                 default:    //單選題
                     if ($useranswer[$q_id] == $referanswer[$q_id]) {
                         $num++;
                         $answer[] = 1;
-                    } else
+                    } else {
                         $num++;
                         $answer[] = 1;
                     
