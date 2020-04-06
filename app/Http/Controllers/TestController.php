@@ -202,7 +202,7 @@ class TestController extends Controller
                 default:    //單選題
                         $num++;
                         $answer[] = 1;
-                        break;
+                     
                     
             
 
