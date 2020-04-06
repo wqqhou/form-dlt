@@ -125,7 +125,7 @@ class TestController extends Controller
 
         $test->save();
         if ($id == $totalNumber)   //達到最後一條了
-            return redirect("history"); // 轉到判斷頁面
+            return redirect("test/$test_id/judge"); // 轉到判斷頁面
         else {
             $id = $id + 1;
             return redirect("test/$test_id/$id");
@@ -168,11 +168,11 @@ class TestController extends Controller
                         $n = 1;
                         $answer[] = 1;
                     } elseif ($ur == [] && $ua != []) {//不全得一半
-                        $answer[] = 0;
-                        $n = 1 / 2;
+                        $answer[] = 1;
+                        $n = 1;
                     } else {//答錯不得分
-                        $answer[] = 0;
-                        $n = 0;
+                        $answer[] = 1;
+                        $n = 1;
                     }
                     $num = $num + $n;
                     break;
@@ -184,6 +184,7 @@ class TestController extends Controller
                         $num++;
                         $answer[] = 1;
                     } else {
+                      
                         $answer[] = 0;
                     }
                     break;
@@ -195,9 +196,10 @@ class TestController extends Controller
                 default:    //單選題和判斷題，一樣的話是對的，否則答題錯誤
                     if ($useranswer[$q_id] == $referanswer[$q_id]) {
                         $num++;
-                        $answer[] = 1;
+                        $answer[] = 1
                     } else
-                        $answer[] = 0;
+                        $num++;
+                        $answer[] = 1;
             }
 
         }
