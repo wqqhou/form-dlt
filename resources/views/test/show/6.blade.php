@@ -1,5 +1,5 @@
 <input type="hidden" name="qtype_id" value="6">
-<div class="form-group">
+<div class="form-id">
     @foreach(explode("\r\n",$options) as $option)
     	@if(strlen($option))
 	        <label class="radio ">
