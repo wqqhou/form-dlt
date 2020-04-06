@@ -48,6 +48,9 @@ class QuestionController extends Controller
                 $row->column(2, 
                 '<a href="/admin/questions/create?qtype=5" class="btn btn-success" style="width: 100%">
                 <i class="fa fa-save"></i>&nbsp;&nbsp;新增申論題</a>');
+                 $row->column(2, 
+                '<a href="/admin/questions/create?qtype=6" class="btn btn-success" style="width: 100%">
+                <i class="fa fa-save"></i>&nbsp;&nbsp;新增資料題</a>');
             });
             $content->body($this->grid());
         });
@@ -76,6 +79,7 @@ class QuestionController extends Controller
             else if ($qtype == 3) $content->body($this->form_truefalse()->edit($id));
             else if ($qtype == 4) $content->body($this->form_short()->edit($id));
             else if ($qtype == 5) $content->body($this->form_discuz()->edit($id));
+            else if ($qtype == 6) $content->body($this->form_id()->edit($id));
         });
     }
 
@@ -97,6 +101,7 @@ class QuestionController extends Controller
             else if ($qtype == 3) $content->body($this->form_truefalse());
             else if ($qtype == 4) $content->body($this->form_short());
             else if ($qtype == 5) $content->body($this->form_discuz());
+            else if ($qtype == 6) $content->body($this->form_id());
         });
     }
 
@@ -160,9 +165,8 @@ class QuestionController extends Controller
             $form->display('qtype_id', 'Question Type');
             $form->display('title', '題目')->rules('required');
             $form->display('options', '選項');
-            $form->display('answer', '答案')->rules('required');
-            $form->display('parse', '詳解')->rules('required');
-
+            $form->display('answer', '答案')
+            $form->display('parse', '詳解')
             $form->display('admin_id', 'admin_id')->rules('required');
             $form->display('created_at', 'Created At');
             $form->display('updated_at', 'Updated At');
@@ -277,6 +281,19 @@ class QuestionController extends Controller
             $form->ckeditor('title', '題目');
             $form->textarea('answer', '答案');
             $form->ckeditor('parse', '詳解');
+
+            $form->display('created_at', 'Created At');
+            $form->display('updated_at', 'Updated At');
+        });
+    }
+    protected function form_id()
+    {
+        return Admin::form(Question::class, function (Form $form) {
+            // id, qtype_id, title, options, answer, parse
+            $form->display('id', 'ID');
+            $form->hidden('qtype_id', 'Question Type')->default(6);
+            $form->ckeditor('title', '題目');
+            $form->textarea('options', '選項')->default("A.選項內容\nB.選項內容\nC.選項內容\nD.選項內容\nE.選項內容\nF.選項內容\nG.選項內容\nH.選項內容\nI.選項內容");
 
             $form->display('created_at', 'Created At');
             $form->display('updated_at', 'Updated At');
