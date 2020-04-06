@@ -107,7 +107,7 @@
                 },
 
                 series: [{
-                  name: '最後 10 次平均分數',
+                  name: '興趣指標(個人資料則為完整度)',
                   data: {!! $testsavg !!},
                   pointPlacement: 'on'
                 }]
