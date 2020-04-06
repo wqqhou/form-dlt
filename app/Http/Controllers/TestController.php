@@ -55,7 +55,7 @@ class TestController extends Controller
     {
         //獲取表單中提交的答題數目以及測試方式。
         $tag_list = $request->get('tag_list');
-        $testType = 0; // 1為照順序
+        $testType = 1; // 1為照順序
         $totalNumber = $request->get('totalnumber');
         if ($totalNumber != 5 && $totalNumber != 10 && $totalNumber != 15 && $totalNumber != 20)
             $totalNumber = 10;
@@ -125,7 +125,7 @@ class TestController extends Controller
 
         $test->save();
         if ($id == $totalNumber)   //達到最後一條了
-            return redirect("test/$test_id/judge"); // 轉到判斷頁面
+            return redirect("history"); // 轉到判斷頁面
         else {
             $id = $id + 1;
             return redirect("test/$test_id/$id");
