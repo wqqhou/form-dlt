@@ -168,11 +168,11 @@ class TestController extends Controller
                         $n = 1;
                         $answer[] = 1;
                     } elseif ($ur == [] && $ua != []) {//不全得一半
-                        $answer[] = 0;
-                        $n = 1 / 2;
+                        $answer[] = 1;
+                        $n = 1;
                     } else {//答錯不得分
-                        $answer[] = 0;
-                        $n = 0;
+                        $answer[] = 1;
+                        $n = 1;
                     }
                     $num = $num + $n;
                     break;
@@ -197,7 +197,8 @@ class TestController extends Controller
                         $num++;
                         $answer[] = 1;
                     } else
-                        $answer[] = 0;
+                        $num++;
+                        $answer[] = ;
             }
 
         }
