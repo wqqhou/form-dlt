@@ -5,7 +5,7 @@
         <div class="jumbotron">
             <h3>測試結果</h3>
             @if($point==100)
-                <h4>Excellent!您得了100分!</h4>
+                <h4>感謝您的填寫!!</h4>
             @elseif($point>=85)
                 <h4>Great!您得了{{$point}}分！</h4>
             @elseif($point>=60)
