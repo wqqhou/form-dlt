@@ -174,6 +174,16 @@ class TestController extends Controller
                     }
                     $num = $num + $n;
                     break;
+                    
+                 case 3://判斷題
+                    if ($useranswer[$q_id] == $referanswer[$q_id]) {
+                        $num++;
+                        $answer[] = 1;
+                    } else {
+                        $answer[] = 0;
+                    }
+                    break;
+                    
                 case 4://填空題
                     $ua = str_replace(" ", "", $useranswer[$q_id]);//去掉所有的空格
                     $ra = str_replace(" ", "", $referanswer[$q_id]);
@@ -190,21 +200,10 @@ class TestController extends Controller
                     $num++;
                     $answer[] = 1;
                     break;
-                case 3://判斷題
-                    if ($useranswer[$q_id] == $referanswer[$q_id]) {
-                        $num++;
-                        $answer[] = 1;
-                    } else {
-                        $answer[] = 0;
-                    }
-                    break;
-                    
+                
                 default:    //單選題
                         $num++;
                         $answer[] = 1;
-                     
-                    
-            
 
         }
         $test->judges = json_encode($answer);
