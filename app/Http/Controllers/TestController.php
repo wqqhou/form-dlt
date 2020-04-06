@@ -198,7 +198,7 @@ class TestController extends Controller
                         $answer[] = 1;
                     } else
                         $num++;
-                        $answer[] = ;
+                        $answer[] = 1;
             }
 
         }
