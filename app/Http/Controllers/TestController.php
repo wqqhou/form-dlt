@@ -166,24 +166,24 @@ class TestController extends Controller
                         $n = 1;
                         $answer[] = 1;
                     } elseif ($ur == [] && $ua != []) {//不全得一半
-                        $answer[] = 1;
-                        $n = 1;
+                        $answer[] = 0;
+                        $n = 1 / 2;
                     } else {//答錯不得分
-                        $answer[] = 1;
-                        $n = 1;
+                        $answer[] = 0;
+                        $n = 0;
                     }
                     $num = $num + $n;
                     break;
-                    
-                 case 3://判斷題
-                    if ($useranswer[$q_id] == $referanswer[$q_id]) {
+
+                case 3:
+                	if ($useranswer[$q_id] == $referanswer[$q_id]) {
                         $num++;
                         $answer[] = 1;
                     } else {
                         $answer[] = 0;
                     }
                     break;
-                    
+
                 case 4://填空題
                     $ua = str_replace(" ", "", $useranswer[$q_id]);//去掉所有的空格
                     $ra = str_replace(" ", "", $referanswer[$q_id]);
@@ -200,16 +200,16 @@ class TestController extends Controller
                     $num++;
                     $answer[] = 1;
                     break;
-                
                 default:    //單選題和判斷題，一樣的話是對的，否則答題錯誤
                     if ($useranswer[$q_id] == $referanswer[$q_id]) {
                         $num++;
                         $answer[] = 1;
                     } else
-                        $num++;
+                    	$num++;
                         $answer[] = 1;
             }
-        
+
+        }
         $test->judges = json_encode($answer);
         $point = round((100 / $total) * $num);
         $test->point = $point;
