@@ -94,7 +94,7 @@
                 },
 
                 series: [{
-                  name: '興趣指標(個人資料則為完整度)',
+                  name: '興趣指標(基本資料則為完整度)',
                   data: {!! $testsavg !!},
                   pointPlacement: 'on'
                 }]
