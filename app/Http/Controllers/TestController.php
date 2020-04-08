@@ -180,7 +180,7 @@ class TestController extends Controller
                         $num++;
                         $answer[] = 1;
                     } else {
-                        $answer[] = 0;
+                        $answer[] = 1;
                     }
                     break;
 
