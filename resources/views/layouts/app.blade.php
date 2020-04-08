@@ -98,7 +98,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/test') }}">測驗</a></li>
                     <li><a href="{{ url('/history') }}">紀錄</a></li>
-                    <li><a href="{{ url('/textbook') }}">資源</a></li>
+                   
                 </ul>
 
                 <!-- Right Side Of Navbar -->
