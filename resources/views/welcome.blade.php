@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Shifu">
 
-    <title>{{ config('app.name') }}</title>
+    <title>{{ 'AI世代職涯探索' }}</title>
 
     <link rel="shortcut icon" href="/assets/dist/img/icon.png">
     <!-- Bootstrap core CSS -->
