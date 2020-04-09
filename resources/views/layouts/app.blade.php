@@ -89,7 +89,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name') }}
+                    {{'AI世代職涯探索' }}
                 </a>
             </div>
 
