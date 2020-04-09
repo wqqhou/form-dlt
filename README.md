@@ -1,5 +1,3 @@
-https://form-dlt.herokuapp.com/
-
 # Setup
 
 set .env
