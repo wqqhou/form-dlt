@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="wb:webmaster" content="04d25093ca20dc42" />
-    <title>{{ config('app.name') }}</title>
+    <title>{{ 'AI世代職涯探索' }}</title>
 
     <!-- Loading Bootstrap -->
     <link href="/assets/dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
