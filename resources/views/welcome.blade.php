@@ -71,7 +71,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5">從今天開始累積你的知識</h1>
+            <h1 class="mb-5">從今天開始探索你的AI世代職涯規劃</h1>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
             <a href="{{ url('/test') }}" class="btn btn-block btn-lg btn-primary">Start Quiz</a>
