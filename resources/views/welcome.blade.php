@@ -54,7 +54,7 @@
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
         
-        <a class="navbar-brand" href="/"><img src="/assets/dist/img/icon.png" height="38" width="38"></img> {{ config('app.name') }}</a>
+        <a class="navbar-brand" href="/"><img src="/assets/dist/img/icon.png" height="38" width="38"></img> {{ 'AI世代職涯探索') }}</a>
         @if (Auth::guest())
             <a href="{{ url('auth/facebook') }}" class="btn btn-primary">
                 <strong>FB 登入</strong>
