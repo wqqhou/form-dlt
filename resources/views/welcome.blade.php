@@ -147,7 +147,8 @@
       <div class="container">
         <div class="row" style="overflow:auto">
           <div class="col-xl-9 mx-auto">
-            <h2 class="mb-4">AI世代職涯探索開發小組\n歡迎聯絡我們:</h2>
+            <h2 class="mb-4">AI世代職涯探索開發小組</h2>
+            <h2 class="mb-4">歡迎聯絡我們:</h2>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
             <h2 class="mb-4">wqqmatt@gmail.com</h2>
