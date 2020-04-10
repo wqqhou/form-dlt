@@ -5,7 +5,7 @@
         <div class="jumbotron">
             <h1>測驗</h1>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/6q7GjSCKPW0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>準備好了嗎~開始答題吧！(請盡量完成填答所有範圍~)</p>
+            <p>準備好了嗎~開始答題吧！(請完成填答所有下拉選單～填答完成共約需時5分鐘)</p>
             {!! Form::open(['url' => '/test']) !!}
             <div class="row form-horizontal">
                 {!! Form::label('tag_list','請選擇範圍：',['class'=>'col-lg-2 control-label ']) !!}
