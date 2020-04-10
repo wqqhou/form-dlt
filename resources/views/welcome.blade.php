@@ -138,6 +138,12 @@
             <p class="lead mb-0">ＡＩ只是輔助工具，人類員工還是主體！盡量學習ＡＩ相關科普知識，反應能力與邏輯能力、態度與團隊溝通能力、職位專業能力仍是重點！</p>
           </div>
         </div>
+         <div class="row no-gutters">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YJ4L_OsUMbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2>立法委員高虹安</h2>
+            <p class="lead mb-0">兩個面向職涯選擇，達成人機互相成就的社會：(1)成為人工智慧專家、數據科學家，深入研發ＡＩ開創新世界！
+(2)在傳統專業領域超前部署、超前學習ＡＩ相關應用，取得領先競爭力！</p>
+          </div>      
       </div>
     </section>
 
