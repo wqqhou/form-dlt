@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'Radar')">能力雷達</button>
+                <button class="tablinks" onclick="openCity(event, 'Radar')">職業適性雷達</button>
                 <button class="tablinks" onclick="openCity(event, 'Line')">歷史得分</button>
                 </div>
 
@@ -71,7 +71,7 @@
                 },
               
                 title: {
-                  text: '能力雷達'
+                  text: '職業適性雷達'
                 },
               
                 pane: {
@@ -94,7 +94,7 @@
                 },
 
                 series: [{
-                  name: '興趣指標(基本資料則為完整度)',
+                  name: '興趣指標(基本資料為測驗完成度)',
                   data: {!! $testsavg !!},
                   pointPlacement: 'on'
                 }]
