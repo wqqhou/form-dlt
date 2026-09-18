@@ -1,6 +1,6 @@
-## form-dlt
+# form-dlt
 
-# Online Practice Test Platform
+## Online Practice Test Platform
 
 A full-stack Laravel application for managing a question bank, generating practice tests, recording responses, and tracking user performance.
 
@@ -18,7 +18,7 @@ A full-stack Laravel application for managing a question bank, generating practi
 
 This is an older web-development project retained as an example of database-backed application design and full-stack implementation.
 
-# Setup
+## Setup
 
 set .env
 
@@ -30,7 +30,7 @@ php artisan migrate --seed
 
 php artisan admin:import log-viewer
 
-# Deploy on Heroku
+## Deploy on Heroku
 
 heroku login
 
